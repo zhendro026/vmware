@@ -1,0 +1,4 @@
+(show network driver ESXi)
+esxcli software vib list | egrep '(nenic|fnic)'
+
+
