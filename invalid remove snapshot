@@ -1,0 +1,14 @@
+snapshot can't remove snapshot
+snapshot grow up datastore
+
+
+
+Here is the actions taken from VMware engineer for deleting the snapshots.
+
+> Created a 'temp' folder.
+> Moved the vmsd and the vmsn files to the temp folder.
+> Performed a Delete All. It completed successfully.
+> Consolidation was required.
+> Since this is a vCenter server, Please perform the Consolidation during Off business Hours to avoid any performance impact on the vCenter Server.
+
+View solution in original post
