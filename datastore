@@ -1,0 +1,11 @@
+show process running on ds by name DS
+lsof|grep JKT01-RPPM-T3-SQL-HV-DS08
+
+show process running on ds by naa
+lsof|grep 5d422bfc-4edb2566-f6b6-0025b51a011b
+
+kill process
+kill -9 2100844
+
+show list DS name and NAA
+esxcli storage vmfs extent list
