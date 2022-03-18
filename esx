@@ -1,4 +1,4 @@
 (show network driver ESXi)
-esxcli software vib list | egrep '(nenic|fnic)'
+esxcli software vib list | egrep '(nenic|fnic|lsi-mr3)'
 
 packet capture pktcap -uw
