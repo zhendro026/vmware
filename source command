@@ -13,4 +13,11 @@ Here is the actions taken from VMware engineer for deleting the snapshots.
 > Consolidation was required.
 > Since this is a vCenter server, Please perform the Consolidation during Off business Hours to avoid any performance impact on the vCenter Server.
 
-View solution in original post
+Voma command
+voma -m vmfs -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1 -D /tmp/dump_file_name.dmp
+voma -m vmfs -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1 -s /tmp/datatsore_name.txt
+voma -m vmfs -f fix -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1
+
+If the step 3 doe snot work, use step 4. Else skip the step 4 and goto step 5
+voma -m vmfs -f advfix -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1
+voma -m vmfs -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1 -s /tmp/datatsore_name.txt
