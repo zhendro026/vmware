@@ -25,3 +25,6 @@ voma -m vmfs -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1 -s /t
 VMKPing
 vmkping ++netstack=vxlan -s 1572 -d 192.168.24.17
 vmkping ++netstack=vmotion -s 1572 -d 192.168.24.17
+
+ShowVMRunningonESX
+vim-cmd vmsvc/getallvms
