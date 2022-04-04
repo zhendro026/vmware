@@ -28,3 +28,6 @@ vmkping ++netstack=vmotion -s 1572 -d 192.168.24.17
 
 ShowVMRunningonESX
 vim-cmd vmsvc/getallvms
+
+CheckMMESXi
+vim-cmd /hostsvc/hostsummary | grep inMaintenanceMode
