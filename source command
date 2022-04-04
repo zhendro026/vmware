@@ -21,3 +21,7 @@ voma -m vmfs -f fix -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:
 If the step 3 doe snot work, use step 4. Else skip the step 4 and goto step 5
 voma -m vmfs -f advfix -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1
 voma -m vmfs -d /vmfs/devices/disks/naa.60060e801236b000504036b000000106:1 -s /tmp/datatsore_name.txt
+
+VMKPing
+vmkping ++netstack=vxlan -s 1572 -d 192.168.24.17
+vmkping ++netstack=vmotion -s 1572 -d 192.168.24.17
