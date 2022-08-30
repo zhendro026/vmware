@@ -31,3 +31,8 @@ vim-cmd vmsvc/getallvms
 
 CheckMMESXi
 vim-cmd /hostsvc/hostsummary | grep inMaintenanceMode
+
+Show driver/firmware version
+esxcli network nic list
+esxcli storage core adapter list
+esxcli network nic get -n vmnic0
